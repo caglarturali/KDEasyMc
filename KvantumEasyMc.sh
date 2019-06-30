@@ -89,7 +89,7 @@ echo "Done."
 
 # Apply configuration
 echo -e "\nApplying configuration..."
-wget -q https://github.com/caglarturali/KvantumEasyMc/raw/master/config.tar.gz
+wget -q https://github.com/caglarturali/KvantumEasyMc/raw/master/files/config.tar.gz
 tar -xf config.tar.gz -C $HOME
 echo "Done."
 
