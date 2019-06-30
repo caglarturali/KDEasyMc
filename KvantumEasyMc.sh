@@ -10,6 +10,7 @@
 # Install dependencies/necessary packages
 echo "Installing dependencies/necessary packages..."
 sudo apt install git wget cmake g++ libx11-dev libxext-dev qtbase5-dev libqt5svg5-dev libqt5x11extras5-dev libkf5windowsystem-dev qttools5-dev-tools build-essential libkf5config-dev libkdecorations2-dev qtdeclarative5-dev extra-cmake-modules libkf5guiaddons-dev libkf5configwidgets-dev libkf5coreaddons-dev libkf5plasma-dev libsm-dev gettext -y
+echo "Done."
 
 # Create an temp directory and run there
 TMP_DIR=$(mktemp -d)
@@ -58,6 +59,7 @@ cmake ..
 make
 sudo make install
 cd $TMP_DIR
+echo "Done."
 
 # Compile and install SierraBreeze
 echo -e "\nInstalling SierraBreeze..."
@@ -67,6 +69,7 @@ mkdir build && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DKDE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
 sudo make install
 cd $TMP_DIR
+echo "Done."
 
 # Compile and install Active Window Control Applet
 echo -e "\nInstalling Active Window Control Applet..."
@@ -77,18 +80,22 @@ cmake .. -DCMAKE_INSTALL_PREFIX=/usr
 make
 sudo make install
 cd $TMP_DIR
+echo "Done."
 
 # Install Latte dock
 echo -e "\nInstalling Latte dock..."
 sudo apt install latte-dock
+echo "Done."
 
 # Apply configuration
 echo -e "\nApplying configuration..."
 wget -q https://github.com/caglarturali/KvantumEasyMc/raw/master/config.tar.gz
 tar -xf config.tar.gz -C $HOME
+echo "Done."
 
 # Delete temporary directory
 echo -e "\nCleaning up..."
 sudo rm -rf $TMP_DIR
+echo "Done."
 
-echo -e "\nDone! Restart your computer for the changes to take effect."
+echo -e "\nInstallation complete! Restart your computer for the changes to take effect."
