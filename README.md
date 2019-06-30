@@ -1,8 +1,8 @@
 # KvantumEasyMc
 
-Bootstrappes a MacOS-like look with Kvantum and some popular themes available to date.
+Bootstraps a MacOS-like look with Kvantum and some popular themes available to date.
 
-![](screenshot.jpg)
+![](files/screenshot.jpg)
 
 # Usage
 
