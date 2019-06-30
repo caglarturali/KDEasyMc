@@ -1,16 +1,23 @@
 # KvantumEasyMc
 
-Bootstraps a MacOS-like look with Kvantum and some popular themes available to date.
+Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/icon packages available to date.
 
-![](files/screenshot.jpg)
+![screenshot](files/screenshot.jpg)
 
 # Usage
 
 1. Download [this script](https://github.com/caglarturali/KvantumEasyMc/raw/master/KvantumEasyMc.sh).
 2. Make it executable.
+
    `chmod +x KvantumEasyMc.sh`
+
 3. Run.
+
    `./KvantumEasyMc.sh`
+
+## Supported distributions
+
+- Debian derivatives
 
 ## Tested on
 
