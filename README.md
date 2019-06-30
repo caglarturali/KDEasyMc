@@ -13,6 +13,7 @@ Bootstraps a MacOS-like look with Kvantum and some popular themes available to d
    `./KvantumEasyMc.sh`
 
 ## Tested on
+
 - KDE neon 5.16 User Edition
 
 ## Implements
@@ -25,3 +26,4 @@ Bootstraps a MacOS-like look with Kvantum and some popular themes available to d
 - [SierraBreeze](https://github.com/ishovkun/SierraBreeze)
 - [Active Window Control Applet](https://store.kde.org/p/998910/)
 - [Latte dock](https://github.com/KDE/latte-dock)
+- [Aritim-Dark Konsole](https://store.kde.org/p/1283010/)
