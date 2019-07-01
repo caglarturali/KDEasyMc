@@ -23,6 +23,17 @@ Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/ic
 
 - KDE neon 5.16 User Edition
 
+## Notes
+
+- Panel shadows are removed by default. If you want to bring it back, run commands below and than restart your session.
+
+  ```
+  cd ~/.local/share/plasma/desktoptheme/McMojave/widgets/
+  rm panel-background.svgz && mv panel-background.svgz.BAK panel-background.svgz
+  cd ~/.local/share/plasma/desktoptheme/McMojave-light/widgets/
+  rm panel-background.svgz && mv panel-background.svgz.BAK panel-background.svgz
+  ```
+
 ## Implements
 
 - [Kvantum](https://github.com/tsujan/Kvantum)
