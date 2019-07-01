@@ -59,6 +59,11 @@ sudo make install
 cd $TMP_DIR
 echo "Done."
 
+# Install Latte dock
+echo -e "\nInstalling Latte dock..."
+sudo apt install latte-dock
+echo "Done."
+
 # Install McMojave KDE Themes
 echo -e "\nInstalling McMojave KDE Themes..."
 git clone https://github.com/vinceliuice/McMojave-kde.git
@@ -93,9 +98,14 @@ cp -pr dist/ $HOME/.icons/capitaine-cursors
 cp -pr dist-white/ $HOME/.icons/capitaine-cursors-white
 cd $TMP_DIR
 
-# Install Latte dock
-echo -e "\nInstalling Latte dock..."
-sudo apt install latte-dock
+# Install SF Mono Font
+echo -e "\nInstalling SF Mono Font..."
+mkdir -p $HOME/.fonts/SFMono
+git clone https://github.com/ZulwiyozaPutra/SF-Mono-Font.git
+cd SF-Mono-Font
+mv SFMono-* $HOME/.fonts/SFMono
+sudo fc-cache -fv
+cd $TMP_DIR
 echo "Done."
 
 # Apply configuration

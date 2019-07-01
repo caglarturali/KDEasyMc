@@ -109,8 +109,9 @@ ForegroundVisited=120,120,120
 ColorScheme=McMojave
 Name=McMojave
 XftAntialias=true
-XftHintStyle=hintmedium
-XftSubPixel=none
+XftHintStyle=hintfull
+XftSubPixel=rgb
+fixed=SF Mono,11,-1,5,50,0,0,0,0,0,Regular
 shadeSortColumn=true
 widgetStyle=Breeze
 

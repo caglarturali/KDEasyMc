@@ -46,3 +46,4 @@ Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/ic
 - [Latte dock](https://github.com/KDE/latte-dock)
 - [Aritim-Dark Konsole](https://store.kde.org/p/1283010/)
 - [Yet Another Magic Lamp](https://github.com/zzag/kwin-effects-yet-another-magic-lamp)
+- [SF Mono Font](https://github.com/ZulwiyozaPutra/SF-Mono-Font)
