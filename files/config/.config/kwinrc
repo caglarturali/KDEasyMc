@@ -7,8 +7,11 @@ OpenGLIsUnsafe=false
 [Effect-MagicLamp]
 AnimationDuration=300
 
+[Effect-YetAnotherMagicLamp]
+Duration=200
+
 [Plugins]
-magiclampEnabled=true
+kwin4_effect_yetanothermagiclampEnabled=true
 sheetEnabled=true
 
 [org.kde.kdecoration2]

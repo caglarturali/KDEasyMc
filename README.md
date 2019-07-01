@@ -34,3 +34,4 @@ Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/ic
 - [Active Window Control Applet](https://store.kde.org/p/998910/)
 - [Latte dock](https://github.com/KDE/latte-dock)
 - [Aritim-Dark Konsole](https://store.kde.org/p/1283010/)
+- [Yet Another Magic Lamp](https://github.com/zzag/kwin-effects-yet-another-magic-lamp)

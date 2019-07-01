@@ -9,7 +9,7 @@
 
 # Install dependencies/necessary packages
 echo "Installing dependencies/necessary packages..."
-sudo apt install git wget cmake g++ libx11-dev libxext-dev qtbase5-dev libqt5svg5-dev libqt5x11extras5-dev libkf5windowsystem-dev qttools5-dev-tools build-essential libkf5config-dev libkdecorations2-dev qtdeclarative5-dev extra-cmake-modules libkf5guiaddons-dev libkf5configwidgets-dev libkf5coreaddons-dev libkf5plasma-dev libsm-dev gettext -y
+sudo apt install git wget cmake g++ libx11-dev libxext-dev qtbase5-dev libqt5svg5-dev libqt5x11extras5-dev libkf5windowsystem-dev qttools5-dev-tools build-essential libkf5config-dev libkdecorations2-dev qtdeclarative5-dev extra-cmake-modules libkf5guiaddons-dev libkf5configwidgets-dev libkf5coreaddons-dev libkf5plasma-dev libsm-dev gettext extra-cmake-modules kwin-dev libdbus-1-dev
 echo "Done."
 
 # Create an temp directory and run there
@@ -43,6 +43,17 @@ git clone git://anongit.kde.org/plasma-active-window-control
 cd plasma-active-window-control
 mkdir build && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+make
+sudo make install
+cd $TMP_DIR
+echo "Done."
+
+# Compile and install Yet Another Magic Lamp
+echo -e "\nInstalling Yet Another Magic Lamp..."
+git clone https://github.com/zzag/kwin-effects-yet-another-magic-lamp.git
+cd kwin-effects-yet-another-magic-lamp
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 make
 sudo make install
 cd $TMP_DIR
