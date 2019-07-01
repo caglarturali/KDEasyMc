@@ -10,7 +10,7 @@ sheetEnabled=true
 
 [org.kde.kdecoration2]
 BorderSize=None
-ButtonsOnLeft=XAIH
+ButtonsOnLeft=XAI
 ButtonsOnRight=SM
 CloseOnDoubleClickOnMenu=false
 ShowToolTips=true
