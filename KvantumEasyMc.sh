@@ -103,7 +103,7 @@ echo -e "\nInstalling SF Mono Font..."
 mkdir -p $HOME/.fonts/SFMono
 git clone https://github.com/ZulwiyozaPutra/SF-Mono-Font.git
 cd SF-Mono-Font
-mv SFMono-* $HOME/.fonts/SFMono
+cp SFMono-* $HOME/.fonts/SFMono
 sudo fc-cache -fv
 cd $TMP_DIR
 echo "Done."
