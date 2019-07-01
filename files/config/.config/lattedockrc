@@ -1,0 +1,17 @@
+[ScreenConnectors]
+10=VGA-1
+
+[UniversalSettings]
+canDisableBorders=false
+currentLayout=My Layout
+downloadWindowSize=800,550
+lastNonAssignedLayout=My Layout
+launchers=
+layoutsColumnWidths=
+layoutsWindowSize=700,450
+memoryUsage=0
+mouseSensitivity=2
+screenTrackerInterval=2500
+showInfoWindow=true
+unifiedGlobalShortcuts=true
+version=2

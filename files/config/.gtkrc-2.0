@@ -1,0 +1,19 @@
+# File created by KDE Gtk Config
+# Configs for GTK2 programs 
+
+include "/usr/share/themes/Mojave-dark/gtk-2.0/gtkrc"
+style "user-font" 
+{
+	font_name="Noto Sans Regular"
+}
+widget_class "*" style "user-font"
+gtk-font-name="Noto Sans Regular 10"
+gtk-theme-name="Mojave-dark"
+gtk-icon-theme-name="McMojave-circle-dark"
+gtk-fallback-icon-theme="McMojave-circle-dark"
+gtk-cursor-theme-name="capitaine-cursors"
+gtk-toolbar-style=GTK_TOOLBAR_ICONS
+gtk-menu-images=0
+gtk-button-images=0
+gtk-primary-button-warps-slider=0
+gtk-modules=appmenu-gtk-module

@@ -1,0 +1,56 @@
+# created by KDE Plasma, Paz Haz 30 19:19:06 2019
+#
+# If you do not want Plasma to override your GTK settings, select
+# Colors in the System Settings and disable the checkbox
+# "Apply colors to non-Qt applications"
+#
+#
+style "default"
+{
+  bg[NORMAL] = { 0.200, 0.200, 0.200 }
+  bg[SELECTED] = { 0.192, 0.357, 0.937 }
+  bg[INSENSITIVE] = { 0.200, 0.200, 0.200 }
+  bg[ACTIVE] = { 0.176, 0.176, 0.176 }
+  bg[PRELIGHT] = { 0.200, 0.200, 0.200 }
+
+  base[NORMAL] = { 0.141, 0.141, 0.141 }
+  base[SELECTED] = { 0.192, 0.357, 0.937 }
+  base[INSENSITIVE] = { 0.200, 0.200, 0.200 }
+  base[ACTIVE] = { 0.192, 0.357, 0.937 }
+  base[PRELIGHT] = { 0.192, 0.357, 0.937 }
+
+  text[NORMAL] = { 0.871, 0.871, 0.871 }
+  text[SELECTED] = { 1.000, 1.000, 1.000 }
+  text[INSENSITIVE] = { 0.176, 0.176, 0.176 }
+  text[ACTIVE] = { 1.000, 1.000, 1.000 }
+  text[PRELIGHT] = { 1.000, 1.000, 1.000 }
+
+  fg[NORMAL] = { 0.871, 0.871, 0.871 }
+  fg[SELECTED] = { 1.000, 1.000, 1.000 }
+  fg[INSENSITIVE] = { 0.176, 0.176, 0.176 }
+  fg[ACTIVE] = { 0.871, 0.871, 0.871 }
+  fg[PRELIGHT] = { 0.871, 0.871, 0.871 }
+}
+
+class "*" style "default"
+
+style "ToolTip"
+{
+  bg[NORMAL] = { 0.200, 0.200, 0.200 }
+  base[NORMAL] = { 0.200, 0.200, 0.200 }
+  text[NORMAL] = { 0.871, 0.871, 0.871 }
+  fg[NORMAL] = { 0.871, 0.871, 0.871 }
+}
+
+widget "gtk-tooltip" style "ToolTip"
+widget "gtk-tooltips" style "ToolTip"
+widget "gtk-tooltip*" style "ToolTip"
+
+style "MenuItem"
+{
+  bg[PRELIGHT] = { 0.192, 0.357, 0.937 }
+  fg[PRELIGHT] = { 1.000, 1.000, 1.000 }
+}
+
+class "*MenuItem" style "MenuItem"
+

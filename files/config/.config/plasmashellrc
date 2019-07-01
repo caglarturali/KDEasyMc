@@ -1,0 +1,15 @@
+[PlasmaRunnerManager]
+LaunchCounts=1 services_org.kde.kwrite.desktop,1 services_org.kde.latte-dock.desktop
+pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconverter,shell,bookmarks,recentdocuments,locations,baloosearch
+
+[PlasmaViews][Panel 2][Horizontal1920]
+thickness=26
+
+[PlasmaViews][Panel 2][Horizontal960]
+thickness=30
+
+[ScreenConnectors]
+0=VGA-1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js
