@@ -2,7 +2,7 @@
 
 ###
 # KvantumEasyMc.
-# Bootstrappes a MacOS-like look with Kvantum and some popular themes available to date.
+# Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/icon packages available to date.
 # Designed for Debian-based systems. Make this file executable first! (chmod +x ...)
 # https://github.com/caglarturali/KvantumEasyMc
 ##
@@ -15,6 +15,38 @@ echo "Done."
 # Create an temp directory and run there
 TMP_DIR=$(mktemp -d)
 cd $TMP_DIR
+
+# Compile and install Kvantum
+echo -e "\nInstalling Kvantum..."
+git clone https://github.com/tsujan/Kvantum.git
+cd Kvantum && cd Kvantum
+mkdir build && cd build
+cmake ..
+make
+sudo make install
+cd $TMP_DIR
+echo "Done."
+
+# Compile and install SierraBreeze
+echo -e "\nInstalling SierraBreeze..."
+git clone https://github.com/ishovkun/SierraBreeze.git
+cd SierraBreeze
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DKDE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
+sudo make install
+cd $TMP_DIR
+echo "Done."
+
+# Compile and install Active Window Control Applet
+echo -e "\nInstalling Active Window Control Applet..."
+git clone git://anongit.kde.org/plasma-active-window-control
+cd plasma-active-window-control
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+make
+sudo make install
+cd $TMP_DIR
+echo "Done."
 
 # Install McMojave KDE Themes
 echo -e "\nInstalling McMojave KDE Themes..."
@@ -49,38 +81,6 @@ cd capitaine-cursors
 cp -pr dist/ $HOME/.icons/capitaine-cursors
 cp -pr dist-white/ $HOME/.icons/capitaine-cursors-white
 cd $TMP_DIR
-
-# Compile and install Kvantum
-echo -e "\nInstalling Kvantum..."
-git clone https://github.com/tsujan/Kvantum.git
-cd Kvantum && cd Kvantum
-mkdir build && cd build
-cmake ..
-make
-sudo make install
-cd $TMP_DIR
-echo "Done."
-
-# Compile and install SierraBreeze
-echo -e "\nInstalling SierraBreeze..."
-git clone https://github.com/ishovkun/SierraBreeze.git
-cd SierraBreeze
-mkdir build && cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DKDE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
-sudo make install
-cd $TMP_DIR
-echo "Done."
-
-# Compile and install Active Window Control Applet
-echo -e "\nInstalling Active Window Control Applet..."
-git clone git://anongit.kde.org/plasma-active-window-control
-cd plasma-active-window-control
-mkdir build && cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=/usr
-make
-sudo make install
-cd $TMP_DIR
-echo "Done."
 
 # Install Latte dock
 echo -e "\nInstalling Latte dock..."
