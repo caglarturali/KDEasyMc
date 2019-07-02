@@ -68,11 +68,13 @@ echo "Done."
 echo -e "\nInstalling McMojave KDE Themes..."
 git clone https://github.com/vinceliuice/McMojave-kde.git
 cd McMojave-kde
+# Necessary for Active Window Control applet.
+sudo cp -r aurorae /usr/local/share/
+# Get back on track.
 ./install.sh
+# Install SDDM theme.
 cd sddm
 sudo ./install.sh
-# Necessary for Active Window Control applet.
-sudo cp -r $HOME/.local/share/aurorae /usr/share/
 cd $TMP_DIR
 
 # Install Mojave Gtk Theme
