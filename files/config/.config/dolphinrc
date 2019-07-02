@@ -1,0 +1,9 @@
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
+[IconsMode]
+FontWeight=50
+MaximumTextLines=2
