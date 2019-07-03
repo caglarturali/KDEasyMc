@@ -25,12 +25,9 @@ Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/ic
 
 ## Notes
 
-- Panel shadows are removed by default. If you want to bring it back, run the script below and than restart your session.
+- Panel shadows are disabled by default. If you want to bring it back, run the command below and than restart your session.
 
-  ```
-  cd ~/.scripts
-  ./toggle_panel_shadows.sh
-  ```
+  `cd ~/.scripts && ./toggle_panel_shadows.sh`
 
 ## Implements
 
