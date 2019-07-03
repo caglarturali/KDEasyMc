@@ -12,6 +12,11 @@ show_msg () {
     echo -e "\e[33m$1\e[0m"
 }
 
+# Set wget progress option.
+# https://stackoverflow.com/a/32491843
+wget --help | grep -q '\--show-progress' && \
+  _PROGRESS_OPT="-q --show-progress --progress=bar:force:noscroll" || _PROGRESS_OPT=""
+
 # Install dependencies/necessary packages
 show_msg "Installing dependencies/necessary packages..."
 sudo apt install git cmake g++ libx11-dev libxext-dev qtbase5-dev libqt5svg5-dev libqt5x11extras5-dev libkf5windowsystem-dev qttools5-dev-tools build-essential libkf5config-dev libkdecorations2-dev qtdeclarative5-dev extra-cmake-modules libkf5guiaddons-dev libkf5configwidgets-dev libkf5coreaddons-dev libkf5plasma-dev libsm-dev gettext extra-cmake-modules kwin-dev libdbus-1-dev
@@ -111,9 +116,9 @@ show_msg "Done." && cd $TMP_DIR
 
 # Apply configuration
 show_msg "\nApplying configuration..."
-wget -q https://github.com/caglarturali/KvantumEasyMc/raw/master/files/dotfiles.tar.gz
+wget $_PROGRESS_OPT https://github.com/caglarturali/KvantumEasyMc/raw/master/files/dotfiles.tar.gz
 tar -xzf dotfiles.tar.gz -C $HOME
-wget -q https://github.com/caglarturali/KvantumEasyMc/raw/master/files/systemwide.tar.gz
+wget $_PROGRESS_OPT https://github.com/caglarturali/KvantumEasyMc/raw/master/files/systemwide.tar.gz
 sudo tar -xzf systemwide.tar.gz -C /
 show_msg "Done."
 
