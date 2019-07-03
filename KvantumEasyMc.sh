@@ -112,7 +112,7 @@ echo "Done."
 # Apply configuration
 echo -e "\nApplying configuration..."
 wget -q https://github.com/caglarturali/KvantumEasyMc/raw/master/files/dotfiles.tar.gz
-tar -xzf config.tar.gz -C $HOME
+tar -xzf dotfiles.tar.gz -C $HOME
 echo "Done."
 
 # Delete temporary directory
