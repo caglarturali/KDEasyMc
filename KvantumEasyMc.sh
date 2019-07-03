@@ -75,7 +75,8 @@ show_msg "\nInstalling McMojave KDE Themes..."
 git clone https://github.com/vinceliuice/McMojave-kde.git
 cd McMojave-kde
 # Necessary for Active Window Control applet.
-sudo cp -r aurorae /usr/local/share/
+sudo mkdir -p /usr/local/share/aurorae/themes/
+sudo cp -r aurorae/* /usr/local/share/aurorae/themes/
 # Get back on track.
 ./install.sh
 # Install SDDM theme.
