@@ -41,8 +41,10 @@ PreloadWeight=34
 
 [Containments][2][Applets][21][Configuration][Appearance]
 automaticButtonThemeEnabled=false
+buttonSize=0.6
 buttonsStandalone=true
 buttonsVerticalCenter=true
+controlButtonsSpacing=6
 customAuroraeThemePath=/usr/local/share/aurorae/themes/McMojave/
 horizontalScreenWidthPercent=0.07300000000000001
 noWindowText=
