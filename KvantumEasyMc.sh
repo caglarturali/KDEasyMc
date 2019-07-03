@@ -70,6 +70,14 @@ show_msg "\nInstalling Latte dock..."
 sudo apt install latte-dock -y
 show_msg "Done."
 
+# Install Albert launcher
+show_msg "\nInstalling Albert launcher..."
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_18.04/ /' > /etc/apt/sources.list.d/home:manuelschneid3r.list"
+wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_18.04/Release.key -O Release.key
+sudo apt-key add - < Release.key
+sudo apt update && sudo apt install albert -y
+show_msg "Done."
+
 # Install McMojave KDE Themes
 show_msg "\nInstalling McMojave KDE Themes..."
 git clone https://github.com/vinceliuice/McMojave-kde.git

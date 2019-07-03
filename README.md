@@ -31,15 +31,31 @@ Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/ic
 
 ## Implements
 
+### Theming
+
 - [Kvantum](https://github.com/tsujan/Kvantum)
 - [McMojave KDE Themes](https://github.com/vinceliuice/McMojave-kde)
 - [Mojave Gtk Theme](https://github.com/vinceliuice/Mojave-gtk-theme)
 - [McMojave-circle Icon Theme](https://github.com/vinceliuice/McMojave-circle)
 - [Capitaine Cursors](https://github.com/keeferrourke/capitaine-cursors)
 - [SierraBreeze](https://github.com/ishovkun/SierraBreeze)
-- [Active Window Control Applet](https://store.kde.org/p/998910/)
-- [Latte dock](https://github.com/KDE/latte-dock)
 - [Aritim-Dark Konsole](https://store.kde.org/p/1283010/)
-- [Yet Another Magic Lamp](https://github.com/zzag/kwin-effects-yet-another-magic-lamp)
-- [SF Mono Font](https://github.com/ZulwiyozaPutra/SF-Mono-Font)
 - [macOS Catalina Beta Wallpapers](https://www.apple.com/macos/catalina-preview/) ([Light](http://512pixels.net/downloads/macos-wallpapers/10-15-beta-light.jpg) - [Dark](http://512pixels.net/downloads/macos-wallpapers/10-15-beta-dark.jpg))
+
+### Utilities
+
+- [Latte dock](https://github.com/KDE/latte-dock)
+- [Albert launcher](https://github.com/albertlauncher/albert)
+  - Hotkey: Ctrl+Space
+
+### Widgets/Applets
+
+- [Active Window Control Applet](https://store.kde.org/p/998910/)
+
+### Effects
+
+- [Yet Another Magic Lamp](https://github.com/zzag/kwin-effects-yet-another-magic-lamp)
+
+### Fonts
+
+- [SF Mono Font](https://github.com/ZulwiyozaPutra/SF-Mono-Font)
