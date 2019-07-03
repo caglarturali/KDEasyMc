@@ -23,8 +23,8 @@ sudo apt install git cmake g++ libx11-dev libxext-dev qtbase5-dev libqt5svg5-dev
 show_msg "Done."
 
 # Create an temp directory and run there
-TMP_DIR=$(mktemp -d)
-cd $TMP_DIR
+_TMP_DIR=$(mktemp -d)
+cd $_TMP_DIR
 
 # Compile and install Kvantum
 show_msg "\nInstalling Kvantum..."
@@ -34,7 +34,7 @@ mkdir build && cd build
 cmake ..
 make
 sudo make install
-show_msg "Done." && cd $TMP_DIR
+show_msg "Done." && cd $_TMP_DIR
 
 # Compile and install SierraBreeze
 show_msg "\nInstalling SierraBreeze..."
@@ -43,7 +43,7 @@ cd SierraBreeze
 mkdir build && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DKDE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
 sudo make install
-show_msg "Done." && cd $TMP_DIR
+show_msg "Done." && cd $_TMP_DIR
 
 # Compile and install Active Window Control Applet
 show_msg "\nInstalling Active Window Control Applet..."
@@ -53,7 +53,7 @@ mkdir build && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr
 make
 sudo make install
-show_msg "Done." && cd $TMP_DIR
+show_msg "Done." && cd $_TMP_DIR
 
 # Compile and install Yet Another Magic Lamp
 show_msg "\nInstalling Yet Another Magic Lamp..."
@@ -63,7 +63,7 @@ mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 make
 sudo make install
-show_msg "Done." && cd $TMP_DIR
+show_msg "Done." && cd $_TMP_DIR
 
 # Install Latte dock
 show_msg "\nInstalling Latte dock..."
@@ -81,21 +81,21 @@ sudo cp -r aurorae /usr/local/share/
 # Install SDDM theme.
 cd sddm
 sudo ./install.sh
-show_msg "Done." && cd $TMP_DIR
+show_msg "Done." && cd $_TMP_DIR
 
 # Install Mojave Gtk Theme
 show_msg "\nInstalling Mojave Gtk Theme..."
 git clone https://github.com/vinceliuice/Mojave-gtk-theme.git
 cd Mojave-gtk-theme
 sudo ./install.sh -d /usr/share/themes
-show_msg "Done." && cd $TMP_DIR
+show_msg "Done." && cd $_TMP_DIR
 
 # Install McMojave-circle Icon Theme
 show_msg "\nInstalling McMojave-circle Icon Theme..."
 git clone https://github.com/vinceliuice/McMojave-circle.git
 cd McMojave-circle
 ./install.sh
-show_msg "Done." && cd $TMP_DIR
+show_msg "Done." && cd $_TMP_DIR
 
 # Install Capitaine Cursors
 show_msg "\nInstalling Capitaine Cursors..."
@@ -104,7 +104,7 @@ git clone https://github.com/keeferrourke/capitaine-cursors.git
 cd capitaine-cursors
 cp -pr dist/ $HOME/.icons/capitaine-cursors
 cp -pr dist-white/ $HOME/.icons/capitaine-cursors-white
-show_msg "Done." && cd $TMP_DIR
+show_msg "Done." && cd $_TMP_DIR
 
 # Install SF Mono Font
 show_msg "\nInstalling SF Mono Font..."
@@ -112,13 +112,13 @@ mkdir -p $HOME/.fonts/SFMono
 git clone https://github.com/ZulwiyozaPutra/SF-Mono-Font.git
 cp SF-Mono-Font/SFMono-* $HOME/.fonts/SFMono
 #sudo fc-cache -fv
-show_msg "Done." && cd $TMP_DIR
+show_msg "Done." && cd $_TMP_DIR
 
 # Download wallpapers
 show_msg "\nDownloading wallpapers..."
 sudo wget $_PROGRESS_OPT http://512pixels.net/downloads/macos-wallpapers/10-15-beta-light.jpg -P /usr/share/wallpapers
 sudo wget $_PROGRESS_OPT http://512pixels.net/downloads/macos-wallpapers/10-15-beta-dark.jpg -P /usr/share/wallpapers
-show_msg "Done." && cd $TMP_DIR
+show_msg "Done." && cd $_TMP_DIR
 
 # Apply configuration
 show_msg "\nApplying configuration..."
@@ -130,7 +130,7 @@ show_msg "Done."
 
 # Delete temporary directory
 show_msg "\nCleaning up..."
-sudo rm -rf $TMP_DIR
+sudo rm -rf $_TMP_DIR
 show_msg "Done."
 
 show_msg "\nInstallation complete! Restart your computer for the changes to take effect."
