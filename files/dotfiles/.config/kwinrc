@@ -14,6 +14,9 @@ Duration=200
 kwin4_effect_yetanothermagiclampEnabled=true
 sheetEnabled=true
 
+[Windows]
+BorderlessMaximizedWindows=true
+
 [org.kde.kdecoration2]
 BorderSize=None
 ButtonsOnLeft=XAI
