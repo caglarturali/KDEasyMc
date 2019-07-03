@@ -42,3 +42,4 @@ Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/ic
 - [Aritim-Dark Konsole](https://store.kde.org/p/1283010/)
 - [Yet Another Magic Lamp](https://github.com/zzag/kwin-effects-yet-another-magic-lamp)
 - [SF Mono Font](https://github.com/ZulwiyozaPutra/SF-Mono-Font)
+- macOS Catalina Beta Wallpapers ([Light](http://512pixels.net/downloads/macos-wallpapers/10-15-beta-light.jpg) - [Dark](http://512pixels.net/downloads/macos-wallpapers/10-15-beta-dark.jpg))

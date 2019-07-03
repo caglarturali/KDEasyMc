@@ -114,6 +114,12 @@ cp SF-Mono-Font/SFMono-* $HOME/.fonts/SFMono
 #sudo fc-cache -fv
 show_msg "Done." && cd $TMP_DIR
 
+# Download wallpapers
+show_msg "\nDownloading wallpapers..."
+sudo wget $_PROGRESS_OPT http://512pixels.net/downloads/macos-wallpapers/10-15-beta-light.jpg -P /usr/share/wallpapers
+sudo wget $_PROGRESS_OPT http://512pixels.net/downloads/macos-wallpapers/10-15-beta-dark.jpg -P /usr/share/wallpapers
+show_msg "Done." && cd $TMP_DIR
+
 # Apply configuration
 show_msg "\nApplying configuration..."
 wget $_PROGRESS_OPT https://github.com/caglarturali/KvantumEasyMc/raw/master/files/dotfiles.tar.gz
