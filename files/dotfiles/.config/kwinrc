@@ -16,6 +16,7 @@ sheetEnabled=true
 
 [Windows]
 BorderlessMaximizedWindows=true
+Placement=Centered
 
 [org.kde.kdecoration2]
 BorderSize=None
