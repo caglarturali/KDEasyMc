@@ -2,7 +2,7 @@
 
 Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/icon packages available to date.
 
-![screenshot](files/screenshot.jpg)
+![screenshot](images/screenshot.jpg)
 
 # Usage
 
