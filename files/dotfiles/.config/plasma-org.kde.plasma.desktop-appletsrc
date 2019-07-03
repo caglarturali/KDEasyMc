@@ -125,6 +125,10 @@ PreloadWeight=34
 [Containments][2][General]
 AppletOrder=3;21;22;23;6;8
 
+[Containments][24][General]
+arrangement=1
+iconSize=3
+
 [Containments][7]
 activityId=
 formfactor=2
