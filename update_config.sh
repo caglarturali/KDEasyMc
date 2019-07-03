@@ -1,3 +1,3 @@
 #!/bin/bash
 
-tar -C files/config -czvf files/config.tar.gz .
+tar -C files/dotfiles -czvf files/dotfiles.tar.gz .

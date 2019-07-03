@@ -111,7 +111,7 @@ echo "Done."
 
 # Apply configuration
 echo -e "\nApplying configuration..."
-wget -q https://github.com/caglarturali/KvantumEasyMc/raw/master/files/config.tar.gz
+wget -q https://github.com/caglarturali/KvantumEasyMc/raw/master/files/dotfiles.tar.gz
 tar -xzf config.tar.gz -C $HOME
 echo "Done."
 
