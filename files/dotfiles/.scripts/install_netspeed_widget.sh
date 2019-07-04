@@ -8,7 +8,7 @@
 _TMP_DIR=$(mktemp -d)
 cd $_TMP_DIR
 
-git clone https://github.com/dfaust/plasma-applet-netspeed-widget
+git clone https://github.com/dfaust/plasma-applet-netspeed-widget.git
 cd plasma-applet-netspeed-widget
 mkdir build && cd build
 cmake -DCMAKE_INSTALL_PREFIX=/usr ..
