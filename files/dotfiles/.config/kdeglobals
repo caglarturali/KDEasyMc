@@ -146,6 +146,7 @@ detailedViewIconSize=0
 [WM]
 activeBackground=51,51,51
 activeBlend=171,171,171
+activeFont=Noto Sans,9,-1,5,75,0,0,0,0,0,Bold
 activeForeground=222,222,222
 inactiveBackground=66,66,66
 inactiveBlend=85,85,85
