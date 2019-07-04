@@ -27,9 +27,9 @@ Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/ic
 
 There are utility scripts located in `~/.scripts`.
 
-- `toggle_panel_shadows.sh` - Panel shadows are disabled by default. Use this script to toggle them on or off.
-- `install_netspeed_widget.sh` - Installs [Netspeed Widget](https://store.kde.org/p/998895/).
-- `install_redshift_control.sh` - Installs [Redshift Control applet](https://store.kde.org/p/998916/).
+- [`toggle_panel_shadows.sh`](files/dotfiles/.scripts/toggle_panel_shadows.sh) - Panel shadows are disabled by default. Use this script to toggle them on or off.
+- [`install_netspeed_widget.sh`](files/dotfiles/.scripts/install_netspeed_widget.sh) - Installs [Netspeed Widget](https://store.kde.org/p/998895/).
+- [`install_redshift_control.sh`](files/dotfiles/.scripts/install_redshift_control.sh) - Installs [Redshift Control applet](https://store.kde.org/p/998916/).
 
 ## Components
 
