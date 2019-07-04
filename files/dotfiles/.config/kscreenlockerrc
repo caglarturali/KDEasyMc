@@ -6,3 +6,6 @@ Autolock=false
 
 [Greeter]
 Theme=com.github.vinceliuice.McMojave
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/10-15-beta-light.jpg
