@@ -135,6 +135,17 @@ wget $_PROGRESS_OPT https://github.com/caglarturali/KvantumEasyMc/raw/master/fil
 tar -xzf dotfiles.tar.gz -C $HOME
 wget $_PROGRESS_OPT https://github.com/caglarturali/KvantumEasyMc/raw/master/files/systemwide.tar.gz
 sudo tar -xzf systemwide.tar.gz -C /
+# Apply light wallpaper.
+dbus-send --session --dest=org.kde.plasmashell --type=method_call /PlasmaShell org.kde.PlasmaShell.evaluateScript 'string:
+var Desktops = desktops();                                                                                                                       
+for (i=0;i<Desktops.length;i++) {
+        d = Desktops[i];
+        d.wallpaperPlugin = "org.kde.image";
+        d.currentConfigGroup = Array("Wallpaper",
+                                    "org.kde.image",
+                                    "General");
+        d.writeConfig("Image", "file:///usr/share/wallpapers/10-15-beta-light.jpg");
+}'
 show_msg "Done."
 
 # Delete temporary directory

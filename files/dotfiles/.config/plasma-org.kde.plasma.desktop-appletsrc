@@ -129,9 +129,6 @@ AppletOrder=3;21;22;23;6;8
 arrangement=1
 iconSize=3
 
-[Containments][24][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/10-15-beta-light.jpg
-
 [Containments][7]
 activityId=
 formfactor=2
