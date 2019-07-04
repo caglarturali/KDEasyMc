@@ -23,11 +23,12 @@ Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/ic
 
 - KDE neon 5.16 User Edition
 
-## Notes
+## Scripts
 
-- Panel shadows are disabled by default. If you want to bring it back, run the command below and than restart your session.
+There are utility scripts located in `~/.scripts`.
 
-  `cd ~/.scripts && ./toggle_panel_shadows.sh`
+- `toggle_panel_shadows.sh`: Panel shadows are disabled by default. Use this script to toggle it.
+- `install_netspeed_widget.sh`: Installs Netspeed Widget.
 
 ## Implements
 
