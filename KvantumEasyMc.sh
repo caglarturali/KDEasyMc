@@ -22,7 +22,7 @@ show_msg "Installing dependencies/necessary packages..."
 sudo apt update && sudo apt install git cmake g++ libx11-dev libxext-dev qtbase5-dev libqt5svg5-dev libqt5x11extras5-dev libkf5windowsystem-dev qttools5-dev-tools build-essential libkf5config-dev libkdecorations2-dev qtdeclarative5-dev extra-cmake-modules libkf5guiaddons-dev libkf5configwidgets-dev libkf5coreaddons-dev libkf5plasma-dev libsm-dev gettext extra-cmake-modules kwin-dev libdbus-1-dev -y
 show_msg "Done."
 
-# Create an temp directory and run there
+# Create a temp directory and run there
 _TMP_DIR=$(mktemp -d)
 cd $_TMP_DIR
 

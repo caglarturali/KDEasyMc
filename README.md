@@ -27,7 +27,7 @@ Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/ic
 
 There are utility scripts located in `~/.scripts`.
 
-- `toggle_panel_shadows.sh`: Panel shadows are disabled by default. Use this script to toggle it.
+- `toggle_panel_shadows.sh`: Panel shadows are disabled by default. Use this script to toggle them.
 - `install_netspeed_widget.sh`: Installs Netspeed Widget.
 
 ## Implements
