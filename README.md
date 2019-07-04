@@ -27,7 +27,7 @@ Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/ic
 
 There are utility scripts located in `~/.scripts`.
 
-- `toggle_panel_shadows.sh`: Panel shadows are disabled by default. Use this script to toggle them.
+- `toggle_panel_shadows.sh`: Panel shadows are disabled by default. Use this script to toggle them on or off.
 - `install_netspeed_widget.sh`: Installs Netspeed Widget.
 
 ## Components
@@ -35,11 +35,11 @@ There are utility scripts located in `~/.scripts`.
 ### Theming
 
 - [Kvantum](https://github.com/tsujan/Kvantum)
+- [SierraBreeze](https://github.com/ishovkun/SierraBreeze)
 - [McMojave KDE Themes](https://github.com/vinceliuice/McMojave-kde)
 - [Mojave Gtk Theme](https://github.com/vinceliuice/Mojave-gtk-theme)
 - [McMojave-circle Icon Theme](https://github.com/vinceliuice/McMojave-circle)
 - [Capitaine Cursors](https://github.com/keeferrourke/capitaine-cursors)
-- [SierraBreeze](https://github.com/ishovkun/SierraBreeze)
 - [Aritim-Dark Konsole](https://store.kde.org/p/1283010/)
 - [macOS Catalina Beta Wallpapers](https://www.apple.com/macos/catalina-preview/) ([Light](http://512pixels.net/downloads/macos-wallpapers/10-15-beta-light.jpg) - [Dark](http://512pixels.net/downloads/macos-wallpapers/10-15-beta-dark.jpg))
 
@@ -63,4 +63,4 @@ There are utility scripts located in `~/.scripts`.
 
 ## Known Issues
 
-- [ ] Konsole theme doesn't get applied
+- [ ] Konsole theme doesn't get applied.
