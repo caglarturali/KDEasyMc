@@ -60,3 +60,7 @@ There are utility scripts located in `~/.scripts`.
 ### Fonts
 
 - [SF Mono Font](https://github.com/ZulwiyozaPutra/SF-Mono-Font)
+
+## Known Issues
+
+- [ ] Konsole theme doesn't get applied
