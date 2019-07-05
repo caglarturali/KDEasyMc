@@ -1,4 +1,4 @@
-# KDEasyMc
+# KDEasyMc :tada:
 
 Bootstraps a macOS-like look with Kvantum and some of the most popular themes/icon packages available to date.
 
