@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ###
-# KvantumEasyMc.
-# Bootstraps a MacOS-like look with Kvantum and some of the most popular themes/icon packages available to date.
+# KDEasyMc.
+# Bootstraps a macOS-like look with Kvantum and some of the most popular themes/icon packages available to date.
 # Designed for Debian-based systems. Make this file executable first! (chmod +x ...)
-# https://github.com/caglarturali/KvantumEasyMc
+# https://github.com/caglarturali/KDEasyMc
 ##
 
 # Shows colorful output messages.
@@ -131,9 +131,9 @@ show_msg "Done." && cd $_TMP_DIR
 
 # Apply configuration
 show_msg "\nApplying configuration..."
-wget $_PROGRESS_OPT https://github.com/caglarturali/KvantumEasyMc/raw/master/files/dotfiles.tar.gz
+wget $_PROGRESS_OPT https://github.com/caglarturali/KDEasyMc/raw/master/files/dotfiles.tar.gz
 tar -xzf dotfiles.tar.gz -C $HOME
-wget $_PROGRESS_OPT https://github.com/caglarturali/KvantumEasyMc/raw/master/files/systemwide.tar.gz
+wget $_PROGRESS_OPT https://github.com/caglarturali/KDEasyMc/raw/master/files/systemwide.tar.gz
 sudo tar -xzf systemwide.tar.gz -C /
 # Apply light wallpaper.
 dbus-send --session --dest=org.kde.plasmashell --type=method_call /PlasmaShell org.kde.PlasmaShell.evaluateScript 'string:
