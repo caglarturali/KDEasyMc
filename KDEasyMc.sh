@@ -15,7 +15,7 @@ show_msg () {
 # Set wget progress option.
 # https://stackoverflow.com/a/32491843
 wget --help | grep -q '\--show-progress' && \
-  _PROGRESS_OPT="-q --show-progress --progress=bar:force:noscroll" || _PROGRESS_OPT=""
+_PROGRESS_OPT="-q --show-progress --progress=bar:force:noscroll" || _PROGRESS_OPT=""
 
 # Install dependencies/necessary packages
 show_msg "Installing dependencies/necessary packages..."
@@ -137,7 +137,7 @@ wget $_PROGRESS_OPT https://github.com/caglarturali/KDEasyMc/raw/master/files/sy
 sudo tar -xzf systemwide.tar.gz -C /
 # Apply light wallpaper.
 dbus-send --session --dest=org.kde.plasmashell --type=method_call /PlasmaShell org.kde.PlasmaShell.evaluateScript 'string:
-var Desktops = desktops();                                                                                                                       
+var Desktops = desktops();
 for (i=0;i<Desktops.length;i++) {
         d = Desktops[i];
         d.wallpaperPlugin = "org.kde.image";
@@ -153,4 +153,4 @@ show_msg "\nCleaning up..."
 sudo rm -rf $_TMP_DIR
 show_msg "Done."
 
-show_msg "\nInstallation complete! Restart your computer for the changes to take effect."
+show_msg "\nInstallation complete!\nIt's recommended to restart your computer immediately for the changes to take effect."
