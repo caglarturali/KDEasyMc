@@ -2,9 +2,12 @@
 
 Bootstraps a macOS-like look with Kvantum and some of the most popular themes/icon packages available to date.
 
-![screenshot](images/screenshot.jpg)
+## Screenshots
 
-# Usage
+![screenshot](screenshots/screenshot.jpg)
+![gif](https://github.com/caglarturali/catalina-dynamic-wallpaper-kde/raw/master/screenshots/screenshot.gif)
+
+## Usage
 
 1. Download [this script](https://github.com/caglarturali/KDEasyMc/raw/master/KDEasyMc.sh).
 2. Make it executable.
@@ -42,7 +45,7 @@ There are utility scripts located in `~/.scripts`.
 - [McMojave-circle Icon Theme](https://github.com/vinceliuice/McMojave-circle)
 - [Capitaine Cursors](https://github.com/keeferrourke/capitaine-cursors)
 - [Aritim-Dark Konsole](https://store.kde.org/p/1283010/)
-- [macOS Catalina Beta Wallpapers](https://www.apple.com/macos/catalina-preview/) ([Light](http://512pixels.net/downloads/macos-wallpapers/10-15-beta-light.jpg) - [Dark](http://512pixels.net/downloads/macos-wallpapers/10-15-beta-dark.jpg))
+- [Catalina Dynamic Wallpaper](https://github.com/caglarturali/catalina-dynamic-wallpaper-kde)
 
 ### Utilities
 

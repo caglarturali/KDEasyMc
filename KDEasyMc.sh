@@ -124,10 +124,12 @@ cp SF-Mono-Font/SFMono-* $HOME/.fonts/SFMono
 #sudo fc-cache -fv
 show_msg "Done." && cd $_TMP_DIR
 
-# Download wallpapers
-show_msg "\nDownloading wallpapers..."
-sudo wget $_PROGRESS_OPT http://512pixels.net/downloads/macos-wallpapers/10-15-beta-light.jpg -P /usr/share/wallpapers
-sudo wget $_PROGRESS_OPT http://512pixels.net/downloads/macos-wallpapers/10-15-beta-dark.jpg -P /usr/share/wallpapers
+# Download Catalina Dynamic Wallpaper
+show_msg "\nDownloading Catalina Dynamic Wallpaper..."
+git clone https://github.com/caglarturali/catalina-dynamic-wallpaper-kde.git
+cd catalina-dynamic-wallpaper-kde
+chmod +x install.sh
+./install.sh
 show_msg "Done." && cd $_TMP_DIR
 
 # Apply configuration
@@ -136,17 +138,6 @@ wget $_PROGRESS_OPT https://github.com/caglarturali/KDEasyMc/raw/master/files/do
 tar -xzf dotfiles.tar.gz -C $HOME
 wget $_PROGRESS_OPT https://github.com/caglarturali/KDEasyMc/raw/master/files/systemwide.tar.gz
 sudo tar -xzf systemwide.tar.gz -C /
-# Apply light wallpaper.
-dbus-send --session --dest=org.kde.plasmashell --type=method_call /PlasmaShell org.kde.PlasmaShell.evaluateScript 'string:
-var Desktops = desktops();
-for (i=0;i<Desktops.length;i++) {
-        d = Desktops[i];
-        d.wallpaperPlugin = "org.kde.image";
-        d.currentConfigGroup = Array("Wallpaper",
-                                    "org.kde.image",
-                                    "General");
-        d.writeConfig("Image", "file:///usr/share/wallpapers/10-15-beta-light.jpg");
-}'
 show_msg "Done."
 
 # Delete temporary directory
