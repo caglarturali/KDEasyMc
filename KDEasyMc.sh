@@ -126,10 +126,10 @@ show_msg "Done." && cd $_TMP_DIR
 
 # Download Catalina Dynamic Wallpaper
 show_msg "\nDownloading Catalina Dynamic Wallpaper..."
-git clone https://github.com/caglarturali/catalina-dynamic-wallpaper-kde.git
-cd catalina-dynamic-wallpaper-kde
-chmod +x install.sh
-./install.sh
+git clone https://github.com/caglarturali/catalina-dynamic-wallpaper.git
+cd catalina-dynamic-wallpaper
+chmod +x install
+./install --kde
 show_msg "Done." && cd $_TMP_DIR
 
 # Apply configuration
