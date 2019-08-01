@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ueo pipefail
+set -ue
 
 ###
 # KDEasyMc.
