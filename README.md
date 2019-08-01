@@ -7,7 +7,7 @@ Bootstraps a macOS-like look with Kvantum and some of the most popular themes/ic
 ![screenshot](screenshots/screenshot.jpg)
 ![gif](https://github.com/caglarturali/catalina-dynamic-wallpaper-kde/raw/master/screenshots/screenshot.gif)
 
-## Usage
+## Installation
 
 ### Via wget
 
