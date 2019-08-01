@@ -9,14 +9,13 @@ Bootstraps a macOS-like look with Kvantum and some of the most popular themes/ic
 
 ## Usage
 
-1. Download [this script](https://github.com/caglarturali/KDEasyMc/raw/master/KDEasyMc.sh).
-2. Make it executable.
+### Via wget
 
-   `chmod +x KDEasyMc.sh`
+`sh -c "$(wget https://raw.githubusercontent.com/caglarturali/KDEasyMc/master/KDEasyMc.sh -O -)"`
 
-3. Run.
+### Via curl
 
-   `./KDEasyMc.sh`
+`sh -c "$(curl -fsSL https://github.com/caglarturali/KDEasyMc/raw/master/KDEasyMc.sh)"`
 
 ## Supported distributions
 
