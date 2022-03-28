@@ -13,7 +13,7 @@ show_msg () {
     echo -e "\e[33m$1\e[0m"
 }
 
-# Set wget progress option.
+# Set wget progress option
 # https://stackoverflow.com/a/32491843
 wget --help | grep -q '\--show-progress' && \
 _PROGRESS_OPT="-q --show-progress --progress=bar:force:noscroll" || _PROGRESS_OPT=""
@@ -48,7 +48,7 @@ show_msg "Done." && cd $_TMP_DIR
 
 # Compile and install Active Window Control Applet
 show_msg "\nInstalling Active Window Control Applet..."
-git clone git://anongit.kde.org/plasma-active-window-control
+git clone https://anongit.kde.org/plasma-active-window-control
 cd plasma-active-window-control
 mkdir build && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr
@@ -83,12 +83,12 @@ show_msg "Done."
 show_msg "\nInstalling McMojave KDE Themes..."
 git clone https://github.com/vinceliuice/McMojave-kde.git
 cd McMojave-kde
-# Necessary for Active Window Control applet.
+#Necessary for Active Window Control applet.
 sudo mkdir -p /usr/local/share/aurorae/themes/
 sudo cp -r aurorae/* /usr/local/share/aurorae/themes/
 # Get back on track.
 ./install.sh
-# Install SDDM theme.
+#Install SDDM theme.
 cd sddm
 sudo ./install.sh
 show_msg "Done." && cd $_TMP_DIR
@@ -110,10 +110,14 @@ show_msg "Done." && cd $_TMP_DIR
 # Install Capitaine Cursors
 show_msg "\nInstalling Capitaine Cursors..."
 mkdir $HOME/.icons
+show_msg "\n Installing Inkscape and x11-apps to build cursor theme..."
+sudo apt install inkscape x11-apps -y
 git clone https://github.com/keeferrourke/capitaine-cursors.git
 cd capitaine-cursors
-cp -pr dist/ $HOME/.icons/capitaine-cursors
-cp -pr dist-white/ $HOME/.icons/capitaine-cursors-white
+./build.sh
+show_msg "\n To better results, capitaine-cursors gonna be moved to /usr/share/icons/capitaine-cursors"
+sudo mkdir /usr/share/icons/capitaine-cursors
+sudo cp -pr dist/dark/* /usr/share/icons/capitaine-cursors/
 show_msg "Done." && cd $_TMP_DIR
 
 # Install SF Mono Font
@@ -121,7 +125,8 @@ show_msg "\nInstalling SF Mono Font..."
 mkdir -p $HOME/.fonts/SFMono
 git clone https://github.com/ZulwiyozaPutra/SF-Mono-Font.git
 cp SF-Mono-Font/SFMono-* $HOME/.fonts/SFMono
-#sudo fc-cache -fv
+show_msg "\n Wait while we updated the fonts."
+sudo fc-cache -fv
 show_msg "Done." && cd $_TMP_DIR
 
 # Download Catalina Dynamic Wallpaper
