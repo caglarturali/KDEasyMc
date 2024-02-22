@@ -11,11 +11,11 @@ Bootstraps a macOS-like look with Kvantum and some of the most popular themes/ic
 
 ### Via wget
 
-`sh -c "$(wget https://raw.githubusercontent.com/caglarturali/KDEasyMc/master/KDEasyMc.sh -O -)"`
+`sh -c "$(wget https://raw.githubusercontent.com/Drack112/KDEasyMc/master/KDEasyMc.sh -O -)"`
 
 ### Via curl
 
-`sh -c "$(curl -fsSL https://github.com/caglarturali/KDEasyMc/raw/master/KDEasyMc.sh)"`
+`sh -c "$(curl -fsSLhttps://raw.githubusercontent.com/Drack112/KDEasyMc/master/KDEasyMc.sh)"`
 
 ## Supported distributions
 
@@ -64,6 +64,3 @@ There are utility scripts located in `~/.scripts`.
 
 - [SF Mono Font](https://github.com/ZulwiyozaPutra/SF-Mono-Font)
 
-## Known Issues
-
-- [ ] Konsole theme doesn't get applied.
